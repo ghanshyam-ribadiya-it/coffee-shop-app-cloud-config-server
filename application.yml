@@ -6,3 +6,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+    
+spring:
+  cloud:
+    config:
+      name: CONFIG-SERVER
+  config:
+    import: configserver:http://localhost:9296
